@@ -7,7 +7,6 @@ SELECT DATE(TIMESTAMP_SECONDS(CAST(timestamp / 1000 AS INT64))) AS transaction_d
 FROM `bigquery-public-data.bitcoin_blockchain.transactions`
 GROUP BY transaction_date
 ORDER BY transaction_date;
-;
 """
 
 # Ejecuta la consulta
